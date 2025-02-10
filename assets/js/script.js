@@ -52,3 +52,25 @@ document.addEventListener("scroll", function() {
         }
     });
 });
+
+// script.js
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.getElementById('overlay');
+    const body = document.body;
+
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+    });
+
+    overlay.addEventListener('click', function() {
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+    });
+});
+
