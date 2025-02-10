@@ -13,17 +13,25 @@
   <header>
     <nav>
       <div class="logo">
-        <img src="assets/images/logo.png" alt="屋享">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="屋享">
+        </a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">首页</a></li>
-        <li><a href="about.html">关于我们</a></li>
         <li><a href="services.html">服务</a></li>
         <li><a href="cases.html">案例</a></li>
-        <li><a href="contact.html">联系我们</a></li>
+        <li><a href="about.html">关于我们</a></li>
       </ul>
     </nav>
   </header>
+  <div class="overlay" id="overlay"></div> <!-- 添加遮罩层 -->
+  
   
   <section id="hero">
     <video autoplay muted loop id="hero-video">
@@ -41,17 +49,17 @@
     <h2>我们的核心业务</h2>
     <div class="service-list">
       <div class="service-card">
-        <img src="assets/images/cleaning.jpg" alt="清洁服务">
+        <img src="assets/images/cleaning.png" alt="清洁服务">
         <h3>无人场景清洁</h3>
         <p>智能化清洁方案，保持场所卫生，提升用户体验。</p>
       </div>
       <div class="service-card">
-        <img src="assets/images/vending.jpg" alt="自动售卖">
+        <img src="assets/images/vending.png" alt="自动售卖">
         <h3>场景自动售卖</h3>
         <p>提供定制商品，提升场所盈利能力，提高客单价。</p>
       </div>
       <div class="service-card">
-        <img src="assets/images/custom.jpg" alt="定制化服务">
+        <img src="assets/images/custom.png" alt="定制化服务">
         <h3>额外增值服务</h3>
         <p>提供场景定制方案，满足不同无人场所的独特需求。</p>
       </div>
@@ -94,13 +102,19 @@
 
   <footer>
     <div class="footer-container">
-      <p>© 2025 屋享公司。版权所有。我们致力于为客户提供最优质的服务，欢迎随时联系我们。</p>
-      <ul class="footer-links">
-        <li><a href="privacy.html">隐私政策</a></li>
-        <li><a href="terms.html">使用条款</a></li>
-        <li><a href="contact.html">联系我们</a></li>
-      </ul>
+      <div>
+        <p><img src="assets/icons/email.png" alt="邮箱图标" class="footer-icon"> 邮箱: <a href="mailto:jianjieluan@163.com">jianjieluan@163.com</a></p>
+        <p><img src="assets/icons/address.png" alt="地址图标" class="footer-icon"> 地址: 六安市裕安区丰泰社区33号</p>
+        <p><img src="assets/icons/phone.png" alt="电话图标" class="footer-icon"> 电话: <a href="tel:88888888">88888888</a></p>
+        <p>© 2025 简杰互联网工作室。版权所有。</p>
+      </div>
+      <div class="footer-qrcode-container">
+        <img src="assets/images/QRcode.png" alt="QR Code" class="footer-qrcode">
+        <p>扫码添加</p>
+      </div>
     </div>
+    <hr class="footer-divider">
+    <p class="footer-icp">皖ICP备88888</p>
   </footer>
 </body>
 </html>
